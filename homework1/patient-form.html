@@ -23,6 +23,27 @@ Description: A simple patient registration form for MIS 3371 HW1.
   </div>
 
   <form>
+  <label for="fullName">Full Name:</label><br>
+  <input type="text" id="fullName" name="fullName" required><br><br>
 
+  <label for="dob">Date of Birth:</label><br>
+  <input type="date" id="dob" name="dob" required><br><br>
 
-    Add patient-form.html with basic structure
+  <label for="gender">Gender:</label><br>
+  <select id="gender" name="gender" required>
+    <option value="">--Please choose--</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone" required><br><br>
+
+  <label for="reason">Reason for Visit:</label><br>
+  <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+
+  <input type="submit" value="Submit">
